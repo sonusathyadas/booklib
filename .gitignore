@@ -1,0 +1,16 @@
+**/bin/
+**/obj/
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+# Logs and temp files
+*.log
+*.tmp
+# IDE/project folders
+.vs/
+.vscode/
+# Windows system files
+Thumbs.db
+desktop.ini
