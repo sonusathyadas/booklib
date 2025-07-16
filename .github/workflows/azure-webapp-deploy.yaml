@@ -18,13 +18,13 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Restore dependencies
-        run: dotnet restore ./BookApi/BookApi.csproj
+        run: dotnet restore 
 
       - name: Build
-        run: dotnet build ./BookApi/BookApi.csproj --configuration Release --no-restore
+        run: dotnet build  --configuration Release --no-restore
 
       - name: Publish
-        run: dotnet publish BookApi/BookApi.csproj --configuration Release --output ./publish --no-build
+        run: dotnet publish --configuration Release --output ./publish --no-build
 
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
